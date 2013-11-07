@@ -18,8 +18,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+//        self.title = NSLocalizedString(@"Second", @"Second");
+//        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        
+        
+        self.tabBarItem =[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemHistory tag:1];
+        
     }
     return self;
 }
